@@ -1,0 +1,73 @@
+header li {
+  display: inline-block;
+}
+header img {
+  max-width: 100%;
+  width: 40px;
+  height: 40px;
+}
+section {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+
+  background-image: url('https://images.unsplash.com/photo-1527697911963-20cb424e9608?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3000&q=80');
+  background-size: cover;
+
+  z-index: -1;
+}
+section {
+  display: grid;
+  place-content: center;
+}
+.info {
+  margin-top: 230px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 600px;
+}
+.info .info__desc {
+    font-family: "AppleSDGothicNeo";
+    font-weight: bold;
+    font-size: 25px;
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 90% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+.info__contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+  width: 50%;
+  height: 30px;
+}
+.info__email img{
+  width: 40px;
+  height: 40px;
+}
+
+.info__github img {
+  width: 40px;
+  height: 40px;
+}
